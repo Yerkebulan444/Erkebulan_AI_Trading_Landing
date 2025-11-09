@@ -3,103 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Erkebulan AI Trading Suite — AI Forex Bots</title>
-  <meta name="description" content="AI-powered trading signal system with Telegram automation, ML prediction, SaaS integration, and Stripe subscription support.">
+  <title>Erkebulan AI Trading Suite</title>
+  <meta name="description" content="AI-powered trading signal system with Telegram automation, ML prediction, SaaS integration, and Stripe subscription support. Built by Erkebulan.">
+  <meta name="keywords" content="AI Trading, Forex Bot, ML Signals, SaaS, Telegram Bot, Stripe, Erkebulan AI, Flippa">
   <meta property="og:title" content="Erkebulan AI Trading Suite" />
-  <meta property="og:description" content="Smart AI Trading Bots with ML Prediction & Telegram Integration" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/YerkeAI/Erkebulan_AI_Trading/main/promo.png" />
+  <meta property="og:description" content="All-in-one AI-powered trading signal bot system with Telegram, ML, and SaaS subscription support." />
   <meta property="og:type" content="website" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const fadeElements = document.querySelectorAll('.fade');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) entry.target.classList.add('opacity-100', 'translate-y-0');
-        });
-      });
-      fadeElements.forEach(el => {
-        el.classList.add('opacity-0', 'translate-y-6', 'transition', 'duration-700');
-        observer.observe(el);
-      });
-    });
-    function smoothScroll(id) {
-      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/6858/6858609.png" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/6858/6858609.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #181a26, #0f111a);
+      color: #eaeaea;
+      text-align: center;
     }
-  </script>
+    header {
+      background: url('https://images.unsplash.com/photo-1649322180649-8bdfb2ce3f3e?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      color: white;
+      padding: 90px 20px 120px;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1, header p, header .btn {
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 2.3em;
+      background: linear-gradient(90deg, #67d3ff, #b14cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px 8px;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .telegram { background: #2AABEE; color: #fff; }
+    .flippa { background: #b14cff; color: #fff; }
+    .demo { background: #7b61ff; color: #fff; }
+    .download { border: 2px solid #67d3ff; color: #67d3ff; }
+    .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+    section { padding: 40px 20px; }
+    .card {
+      background: #181b25;
+      margin: 15px auto;
+      padding: 15px 20px;
+      border-radius: 15px;
+      max-width: 700px;
+      box-shadow: 0 0 10px rgba(177,76,255,0.2);
+    }
+    footer {
+      margin-top: 30px;
+      padding: 25px;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid #222;
+    }
+    footer a { color: #7b61ff; text-decoration: none; }
+  </style>
 </head>
+<body>
+  <header>
+    <h1>Erkebulan AI Trading Suite</h1>
+    <p>AI-powered trading signal system with Telegram automation, ML prediction, SaaS integration, and Stripe subscription support.</p>
+    <a href="https://t.me/ErkebulanAI_trade" class="btn telegram">💬 Join Telegram</a>
+    <a href="https://flippa.com" class="btn flippa">💎 Buy on Flippa</a>
+    <a href="#" class="btn demo">🚀 Try Demo</a>
+    <a href="https://github.com/Yerkebulan444/Erkebulan_AI_Trading" class="btn download">⬇️ Download Source</a>
+  </header>
 
-<body class="bg-gray-900 text-gray-100 font-sans selection:bg-purple-500 selection:text-white">
-  <section class="text-center py-16 px-4">
-    <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 fade">
-      Erkebulan AI Trading Suite
-    </h1>
-    <p class="text-lg mt-4 max-w-2xl mx-auto text-gray-300 fade">
-      AI-powered trading signal system with Telegram automation, ML prediction, SaaS integration, and Stripe subscription support.
-    </p>
-    <div class="mt-8 flex justify-center gap-4 fade">
-      <a href="https://t.me/ErkebulanAI_trade" target="_blank"
-         class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl font-semibold shadow-md">
-         🚀 Try Demo
-      </a>
-      <a href="https://flippa.com" target="_blank"
-         class="border border-purple-400 text-purple-300 hover:bg-purple-800 px-6 py-3 rounded-xl font-semibold">
-         💎 Buy on Flippa
-      </a>
-    </div>
+  <section>
+    <h2>✨ Key Features</h2>
+    <div class="card">🤖 <b>Two AI Trading Bots</b><br>Aggressive & Impulse strategies powered by RSI, EMA, MACD, and Stoch indicators.</div>
+    <div class="card">🧠 <b>Machine Learning</b><br>Smart filtering with RandomForest model for 65%+ signal accuracy.</div>
+    <div class="card">📡 <b>Telegram Integration</b><br>Automatic signal publishing to groups and channels with inline buttons.</div>
+    <div class="card">💳 <b>SaaS + Stripe</b><br>Built-in subscription access model with Stripe payments.</div>
+    <div class="card">📈 <b>Auto-Training</b><br>Continuous ML learning from feedback via signals_dataset.csv.</div>
+    <div class="card">💻 <b>Termux & Ubuntu Ready</b><br>Fully compatible with Termux and Linux VPS for automation.</div>
   </section>
 
-  <section class="px-6 py-12 fade">
-    <h2 class="text-center text-3xl font-bold mb-10 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
-      Features
-    </h2>
-    <div class="max-w-3xl mx-auto space-y-4">
-      <div class="bg-gray-800 p-5 rounded-xl shadow"><b>🤖 Two AI Trading Bots</b><br>Aggressive and Impulse bots powered by RSI, EMA, MACD, and Stoch indicators.</div>
-      <div class="bg-gray-800 p-5 rounded-xl shadow"><b>🧠 Machine Learning</b><br>Predictive ML model filters signals for accuracy above 65% confidence.</div>
-      <div class="bg-gray-800 p-5 rounded-xl shadow"><b>💬 Telegram Integration</b><br>Automatic signal publishing to groups and channels with inline buttons.</div>
-      <div class="bg-gray-800 p-5 rounded-xl shadow"><b>💳 SaaS + Stripe</b><br>Subscription-based access model with Stripe integration.</div>
-      <div class="bg-gray-800 p-5 rounded-xl shadow"><b>📊 Auto-Training</b><br>Continuous learning from feedback via signals_dataset.csv.</div>
-      <div class="bg-gray-800 p-5 rounded-xl shadow"><b>📱 Termux & Ubuntu Ready</b><br>Fully compatible with Termux mobile setup and Linux servers.</div>
-    </div>
+  <section>
+    <h2>💰 Subscription Plans</h2>
+    <div class="card">🧩 Starter — $9/mo<br><small>For testing AI signals</small></div>
+    <div class="card" style="background:linear-gradient(90deg,#7b61ff,#b14cff);color:#fff;">💼 Pro Trader — $29/mo<br><small>Full access with ML filter</small></div>
+    <div class="card">🏦 Institutional — $79/mo<br><small>Advanced usage + API</small></div>
   </section>
 
-  <section class="px-6 py-12 bg-gray-800 fade">
-    <h2 class="text-center text-3xl font-bold mb-10 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">Tech Stack</h2>
-    <p class="text-center text-gray-300 max-w-3xl mx-auto">
-      Python 3 • Telegram Bot API • TradingView TA • Scikit-learn • Joblib • Stripe API • SQLite • Termux/Ubuntu
-    </p>
-  </section>
-
-  <section id="pricing" class="px-6 py-12 fade">
-    <h2 class="text-center text-3xl font-bold mb-10 bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
-      Subscription Plans
-    </h2>
-    <div class="max-w-3xl mx-auto grid md:grid-cols-3 gap-6">
-      <div class="bg-gray-800 p-6 rounded-xl text-center">
-        <h3 class="text-xl font-bold mb-2">Starter</h3>
-        <p class="text-gray-400">$9 / month</p>
-        <p class="mt-2 text-sm text-gray-400">For testing AI signals</p>
-        <button onclick="smoothScroll('pricing')" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 mt-4 rounded-lg">Subscribe</button>
-      </div>
-      <div class="bg-purple-700 p-6 rounded-xl text-center shadow-lg">
-        <h3 class="text-xl font-bold mb-2">Pro Trader</h3>
-        <p class="text-gray-200">$29 / month</p>
-        <p class="mt-2 text-sm text-gray-200">Full access with ML filter</p>
-        <button onclick="smoothScroll('pricing')" class="bg-purple-500 hover:bg-purple-600 px-5 py-2 mt-4 rounded-lg">Subscribe</button>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-xl text-center">
-        <h3 class="text-xl font-bold mb-2">Institutional</h3>
-        <p class="text-gray-400">$79 / month</p>
-        <p class="mt-2 text-sm text-gray-400">Advanced usage + API</p>
-        <button onclick="smoothScroll('pricing')" class="bg-purple-600 hover:bg-purple-700 px-5 py-2 mt-4 rounded-lg">Subscribe</button>
-      </div>
-    </div>
-  </section>
-
-  <footer class="text-center py-8 text-gray-400 text-sm fade">
+  <footer>
     © 2025 Erkebulan AI Trading Suite • Built with 💜 AI & Python<br>
-    <a href="https://flippa.com" target="_blank" class="text-purple-400 hover:underline">View on Flippa</a>
+    <a href="https://yerkebulan444.github.io/Erkebulan_AI_Trading_Landing/">View Landing</a> •
+    <a href="https://t.me/ErkebulanAI_trade">Telegram</a> •
+    <a href="https://flippa.com">Flippa</a>
   </footer>
 </body>
 </html>
